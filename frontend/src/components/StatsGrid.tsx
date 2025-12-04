@@ -6,17 +6,10 @@ interface Stat {
   icon?: string;
 }
 
-const defaultGradients = [
-  "from-primary to-primary",
-  "from-primary to-primary",
-  "from-primary to-primary",
-  "from-primary to-primary",
-];
-
 export default function StatsGrid({ stats }: { stats: Stat[] }) {
   return (
     <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-      {stats.map((stat, index) => {
+      {stats.map((stat) => {
         return (
           <div
             key={stat.label}
