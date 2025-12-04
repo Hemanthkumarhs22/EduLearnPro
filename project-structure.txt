@@ -1,0 +1,75 @@
+EduLearnProFinal/
+├─ backend/
+│  ├─ alembic/
+│  │  ├─ env.py
+│  │  └─ versions/
+│  │     └─ 0001_initial_schema.py
+│  │
+│  ├─ app/
+│  │  ├─ api/
+│  │  │  └─ routes/
+│  │  │     ├─ auth.py
+│  │  │     ├─ courses.py
+│  │  │     ├─ enrollments.py
+│  │  │     ├─ lessons.py
+│  │  │     ├─ stats.py
+│  │  │     └─ users.py
+│  │  ├─ core/ (config.py, dependencies.py, security.py)
+│  │  ├─ db/ (session.py)
+│  │  ├─ models/ (course.py, enrollment.py, lesson.py, user.py)
+│  │  └─ schemas/ (course.py, dashboard.py, enrollment.py, lesson.py, stats.py, user.py)
+│  │
+│  ├─ env.example
+│  ├─ media/
+│  │  └─ thumbnails/
+│  └─ requirements.txt
+│
+├─ docs/
+│  ├─ api.md
+│  ├─ db-schema.md
+│  ├─ project-plan.md
+│  ├─ testing.md
+│  └─ user-guide.md
+│
+├─ frontend/
+│  ├─ index.html
+│  ├─ public/
+│  │  └─ vite.svg
+│  ├─ src/
+│  │  ├─ components/
+│  │  │  ├─ CourseCard.tsx
+│  │  │  ├─ FormField.tsx
+│  │  │  ├─ LessonList.tsx
+│  │  │  ├─ ProgressBar.tsx
+│  │  │  └─ StatsGrid.tsx
+│  │  ├─ hooks/ (useAuth.ts)
+│  │  ├─ layouts/ (AuthLayout.tsx, MainLayout.tsx)
+│  │  ├─ lib/ (api.ts)
+│  │  ├─ pages/
+│  │  │  ├─ AboutPage.tsx
+│  │  │  ├─ CatalogPage.tsx
+│  │  │  ├─ ContactPage.tsx
+│  │  │  ├─ CourseDetailPage.tsx
+│  │  │  ├─ CourseManagementPage.tsx
+│  │  │  ├─ InstructorDashboardPage.tsx
+│  │  │  ├─ LandingPage.tsx
+│  │  │  ├─ LearningPage.tsx
+│  │  │  ├─ LessonManagementPage.tsx
+│  │  │  ├─ LoginPage.tsx
+│  │  │  ├─ ProfilePage.tsx
+│  │  │  ├─ RegisterPage.tsx
+│  │  │  └─ StudentDashboardPage.tsx
+│  │  ├─ providers/ (AuthProvider.tsx)
+│  │  ├─ routes/ (ProtectedRoute.tsx)
+│  │  ├─ types/ (index.ts)
+│  │  └─ main.tsx, App.tsx, App.css, index.css
+│  ├─ tailwind.config.js
+│  ├─ package.json / package-lock.json
+│  ├─ tsconfig*.json
+│  ├─ vite.config.ts
+│  ├─ eslint.config.js
+│  └─ postcss.config.js
+│
+├─ docs/ (see above)
+├─ README.md
+└─ project-structure.txt (this file)
